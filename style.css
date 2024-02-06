@@ -1,0 +1,154 @@
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left, #fff 80%, #c3f5ff 20%);
+}
+.navsection{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to top, #fff 80%, #c3f5ff 20%);
+
+}
+.logo{
+    width: 40%;
+    color: #fff;
+    background-image: linear-gradient(#40dfd7 40%, #65147e 60%);
+    padding-left: 100px;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+.logo h1{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    animation: move 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+/* move the slider  */
+@keyframes move {
+    from{ padding-left: 40px ;}
+    to{padding-right: 40px;}
+}
+nav{
+    width: 60%;
+    /* background-color: #40dfd7; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a{
+    text-transform: uppercase;
+    text-decoration:none;
+    color: #000;
+    font-size: 17px;
+    font-weight: 900;
+    position: relative;
+}
+nav a:first-child{
+    color: #65147e;
+}
+/* this code use for draw the line under the menu */
+nav a:before{
+    content: "";
+    top: 20%;
+    left:0;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid black;
+    transition: all 0.4s linear;
+}
+nav a:hover:before{
+    width: 100%;
+   
+}
+main{
+    height: 80vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.second {
+    border-radius:  58% 42% 38% 62% / 95% 55% 45% 5%;
+    background-color: #75e7e2;
+    object-fit: cover;
+}
+.second img{
+    max-width: 400px;
+    height: auto;
+}
+.first{
+    color: #000;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+.first h3{
+font-size: 40px;
+margin-bottom: 20px;
+}
+
+.first h3:after{
+    content: " ";
+    top: 44%;
+    left: 20%;
+    position: absolute;
+    width: 450px;
+    height: 3px;
+    border-bottom: 2px solid black;
+    transition: all 0.4s linear;
+
+}
+.first h1{
+    font-size: 65px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.first h5{
+   word-spacing: 2px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.first .btn1, .btn2{
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 50px;
+}
+.first .btn1{
+    color: #fff;
+    background-image: linear-gradient(to right,#40dfd7 0%, #65147e 100%),radial-gradient(circle at top left, #4458dc, #854fee);
+     border:  double 2px transparent;
+     box-shadow: 0 10px 25px #000;
+}
+
+.first .btn1:hover{
+    background-image: none;
+    background-color: #4458dc;
+}
+.first .btn2{
+    box-shadow: none;
+    color: #222;
+    background-color: #fff;
+    border: 1px solid #4458dc;
+}
+.first .btn2:hover{
+    background-color: #65147e;
+    color: #fff;
+}
